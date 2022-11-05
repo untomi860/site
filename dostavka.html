@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="page1.css">
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="menu.js"></script>
+	<script src="scrip.js"></script>
+	<title>Bellitrix</title>
+	<style>
+	@font-face{
+	font-family:Grafftti123;
+	src: url(Fonts/Grafftti123.ttf);
+}
+#fixed{
+	font-family:Grafftti123;
+}
+	</style>
+
+</head>
+<body>
+	<a href="cart.html"><ion-icon class="bag" name="bag-handle-outline">
+	
+</ion-icon></a>
+<a href="registr.html"><ion-icon class="vxod" name="person-outline"></ion-icon></a>
+<div id="fixed"><a href="index.html"> bellitrix</a></div>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<div class="hamburger-menu">
+  <input id="menu__toggle" type="checkbox" />
+  <label class="menu__btn" for="menu__toggle">
+    <span></span>
+  </label>
+  <ul class="menu__box">
+    <li><a class="menu__item" href="contacts.html">Контакты</a></li>
+    <li><a class="menu__item" href="dostavka.html">Доставка</a></li>
+    <li><a class="menu__item" href="otzivy.html">Отзывы</a></li>
+    <li><a class="menu__item" href="cart.html">Корзина</a></li>
+     <li><a class="menu__item" href="registr.html">Регистрация</a></li>
+  </ul>
+</div>
+		<div class="otz">Доставка</div>
+		<p id="qq1">Вы можете выбрать любой удобный Вам способ доставки и оплаты Вашего заказа.
+На этой странице приведена сводная информация о видах доставки, более подробную информацию о доставке в конкретный город 
+вы можете узнать, выбрав из списка ваш город на этой странице, или в процессе оформления заказа в корзине нашего магазина, 
+где так же вы найдете информацию о точной стоимости доставки Вашего заказа. Мы гарантируем, что доставка Вашего заказа 
+будет стоить именно столько, сколько указано на нашем сайте.</p>
+<br><br>
+<hr color="f5f5f5">
+<div>
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn"> Список городов</button>
+  <div id="myDropdown" class="dropdown-content">
+    <input type="text" placeholder="Поиск.." id="myInput" onkeyup="filterFunction()">
+    <a href="#">Новосибирск</a>
+    <a href="#">Москва</a>
+    <a href="#">Красноярск</a>
+    <a href="#">Чита</a>
+    <a href="#">Чебоксары</a>
+    <a href="#">Нижний-Новгород</a>
+    <a href="#">Санкт-Петербург</a>
+  </div>
+</div>
+</div>
+
+
+<br><br>
+<br><br>
+	<footer id="colophon" class="site-footer" role="contentinfo">
+		<div class="col-full">
+			<div class="footer-widgets row-1 col-3 fix">
+				<div class="block footer-widget-1">
+					<div id="custom_html-15" class="widget_text widget widget_custom_html">
+						<div class="textwidget custom-html-widget">
+							<img class="visa" src="visa.png" data-src="visa.png" alt width="51" height="51" data-was-processed="true">
+						<img class="mc" src="mc.png" data-src="mastercard.png" alt width="51" height="51" data-was-processed="true">
+					</div>
+				</div>
+				<div id="custom_html-16" class="widget_text widget widget_custom_html">
+					<div class="zag">© 2022, Bellitrix</div>
+				</div>
+			</div>
+				<div class="block3">
+					<div id="nav_menu-5" class="widget widget_nav_menu">
+						<div class="menu2">
+							<float id="menu1" class="menu">
+								<div id="menu1" class="cls1">
+									<a href="contacts.html">Контакты</a>
+								</div>
+								<div id="menu1" class="cls2">
+									<a href="dostavka.html">Доставка</a>
+								</div>
+	
+	</footer>
+
+</body>
+</html>

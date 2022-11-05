@@ -1,0 +1,95 @@
+<div class="hamburger-menu">
+  <input id="menu__toggle" type="checkbox" />
+  <label class="menu__btn" for="menu__toggle">
+    <span></span>
+  </label>
+  <ul class="menu__box">
+    <li><a class="menu__item" href="file:///C:/Users/%D0%90%D0%BD%D0%B4%D1%80%D0%B5%D0%B9/Desktop/%D0%A1%D0%B0%D0%B9%D1%82/contacts.html">Контакты</a></li>
+    <li><a class="menu__item" href="#">Доставка</a></li>
+    <li><a class="menu__item" href="#">Отзывы</a></li>
+  </ul>
+</div>
+
+#menu__toggle {
+  opacity: 0;
+}
+.menu__btn {
+  display: flex; /* используем flex для центрирования содержимого */
+  align-items: center;  /* центрируем содержимое кнопки */
+  position: fixed;
+  top: 32px;
+  left: 20px;
+  width: 26px;
+  height: 30px;
+  cursor: pointer;
+  z-index: 1;
+}
+/*"гамбургер" */
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 38px;
+  height: 4px;
+  background-color: black;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+}
+
+.menu__box {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  left: -100%;
+  width: 300px;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  text-align: center;
+  background-color: white;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+}
+
+/* элементы  */
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+  color: black;
+  font-family: 'EagleSans-Bold', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.menu__item:hover {
+  background-color: #CFD8DC;
+}
+
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+#menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+  left: 0;
+}

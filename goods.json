@@ -1,0 +1,32 @@
+{
+	"1" : {
+		"name":"Black Bellitrix",
+		"cost": 2400,
+		"descript":"Шелкография",
+		"order": 3,
+		"width":240,
+		"height":250,
+		"img":"hudi.png",
+		"P":"₽"
+	},
+	"2" : {
+		"name":"Gray Bellitrix",
+		"cost": 2400 ,
+		"descript":"Шелкография",
+		"order": 5,
+		"width":310,
+		"height":250,
+		"img":"sery.png",
+		"P":"₽"
+	},
+	"3" : {
+		"name":"BlackT Bellitrix",
+		"cost": 1400 ,
+		"descript":"Шелкография",
+		"order": 1,
+		"width":250,
+		"height":250,
+		"img":"futbolka.png",
+		"P":"₽"
+	}
+}
